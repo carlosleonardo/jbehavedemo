@@ -1,0 +1,169 @@
+<html><head>    	
+    <title>Suíte de Aplicativos RFB</title>
+    <link rel="stylesheet" type="text/css" href="/camweb/pages/www1/login/loginPortalRFB.css?2">
+  
+  <style type="text/css" media="print">.dropShadow{visibility:hidden;}</style></head><body class="orgao02400">
+    <div style="position: relative; z-index: 2; zoom: 1;" id="conteudo" class="conteudo" shadowId="conteudo_dropShadow">
+      <div id="acesso">
+		<div id="imgLogo"></div>
+		<div class="titulo">
+          Acesso a Suíte de Aplicativos da Receita Federal
+        </div>
+		<div id="bloco">
+		  <div id="login">
+			
+
+
+
+
+<form id="loginForm" onsubmit="return form_onsubmit(this)" method="POST" name="loginForm" action="https://www1.suiterfb.desenv.serpro/camweb/grupo">
+	<input name="sis" value="E-PRO" type="hidden">
+
+<input name="url" value="eprocesso.suiterfb.desenv.serpro/ControleAutenticarUsuario.asp" type="hidden">
+
+
+	
+			  <div class="loginFieldsArea">        	
+				<p><label for="user">Usuário</label><input onkeyup="contaCaracter();" name="user" maxLength="11" type="text"></p><p><label for="pass">Senha SIEF</label><input name="pass" maxLength="14" type="password"></p><p><select name="banco_pass"><option value="DOC21">DOC21</option><option value="EOC21">EOC21</option><option value="HOC20">HOC20</option><option value="HOC32">HOC32</option><option value="TOC20">TOC20</option><option value="TOC21">TOC21</option></select></p><p id="p1"><input onsubmit="return valida_campos();" name="btnLogin" value="Avançar" type="submit">&nbsp;<input name="Cancel" value="Limpar" type="reset">&nbsp;<input onclick="mostrarMudarSenha()" value="Alterar Senha" type="button"></p><div style="display: none; visibility: hidden;" id="div_test" class="loginFieldsArea"><p><label for="novasenha">Nova senha</label><input name="novasenha" maxLength="12" type="password"></p><p><label for="confirmenovasenha">Confirme senha</label><input name="confirmenovasenha" maxLength="12" type="password"></p></div><p style="display: none; visibility: hidden;" id="p2"><input value="Avançar" type="submit">&nbsp;<input value="Limpar" type="reset">&nbsp;<input onclick="ocultarMudarSenha()" value="Voltar" type="button"></p>
+			  </div>
+			
+</form>
+
+		  </div>
+		  <div id="certificado">
+		    <p class="titulo">Acesso por Certificado Digital</p>
+			
+
+
+
+
+
+	<form id="loginCertForm" onsubmit="return form_onsubmit(this)" method="POST" name="loginCertForm" action="https://www1.suiterfb.desenv.serpro/camweb/cc/grupo">
+		<input name="sis" value="E-PRO" type="hidden">
+
+<input name="url" value="eprocesso.suiterfb.desenv.serpro/ControleAutenticarUsuario.asp" type="hidden">
+
+	
+		
+			  <p>Se você já possui Certificado Digital, clique no ícone abaixo:</p>
+			  <p><input alt="Certificado Digital" src="/camweb/pages/www1/login/imagens/logo_cert_digital.png" type="IMAGE"></p>
+			  <div class="loginCertFieldsArea">        	
+				<p><select name="banco_cert"><option value="DOC21">DOC21</option><option value="EOC21">EOC21</option><option value="HOC20">HOC20</option><option value="HOC32">HOC32</option><option value="TOC20">TOC20</option><option value="TOC21">TOC21</option></select></p>
+			  </div>
+			
+	</form>
+	
+		  </div>
+		  <div id="rodape"></div>
+		  
+		</div>
+	  </div>
+	  
+      
+      <div id="informativo">
+	    <script type="text/javascript">
+	      try {
+		      if (parent.window != window) {
+  		          document.getElementById("informativo").className = 'subLogin';
+		      }
+	      } catch (e) {
+	      }
+	    </script>
+		<p>
+          As informações contidas nos sistemas da Administração
+          Pública são protegidas por sigilo.
+        </p>
+		<p style="margin-right: -100px;">
+          As seguintes condutas constituem infrações ou ilícitos que
+		  sujeitam o usuário deste sistema à responsabilização
+		  administrativa, penal e cível:
+		</p>
+		<div class="enumeracao">
+		  <p><span class="letra">a)</span> o acesso não autorizado;</p>
+		  <p><span class="letra">b)</span> o acesso não motivado por necessidade de serviço;</p>
+		  <p><span class="letra">c)</span> a disponibilização voluntária ou acidental da senha de acesso;</p>
+		  <p><span class="letra">d)</span> a disponibilização não autorizada de informações contidas no sistema;</p>
+		  <p><span class="letra">e)</span> e a quebra do sigilo relativo a informações contidas no sistema.</p>
+		</div> 
+		<p>
+          Todo e qualquer acesso é monitorado e controlado.  Proteja
+		  sempre a sua senha. Quando encerrar as operações, tenha o
+		  cuidado de clicar a opção "Sair".  Ao teclar a opção
+		  "Avançar", o usuário declara-se ciente das responsabilidades
+		  acima referidas.
+        </p>
+		<p>
+          Fundamento Legal: Constituição Federal, Código Penal, Código
+		  Tributário Nacional e Portaria SRF/Cotec 45/2004
+        </p>
+	  </div>
+	</div><div style="margin: 30px 291px 0px; left: 2px; top: 2px; position: absolute; z-index: 1;" id="conteudo_dropShadow" class="dropShadow"><div style="background: black; left: 2px; top: 2px; width: 858px; height: 484px; position: absolute; z-index: 1; opacity: 0.0125;" class="dropShadow"></div><div style="background: black; left: 4px; top: 0px; width: 858px; height: 484px; position: absolute; z-index: 1; opacity: 0.0125;" class="dropShadow"></div><div style="background: black; left: 8px; top: 4px; width: 858px; height: 484px; position: absolute; z-index: 1; opacity: 0.0125;" class="dropShadow"></div><div style="background: black; left: 4px; top: 8px; width: 858px; height: 484px; position: absolute; z-index: 1; opacity: 0.0125;" class="dropShadow"></div><div style="background: black; left: 0px; top: 4px; width: 858px; height: 484px; position: absolute; z-index: 1; opacity: 0.0125;" class="dropShadow"></div><div style="background: black; left: 6px; top: 2px; width: 858px; height: 484px; position: absolute; z-index: 1; opacity: 0.0125;" class="dropShadow"></div><div style="background: black; left: 6px; top: 6px; width: 858px; height: 484px; position: absolute; z-index: 1; opacity: 0.0125;" class="dropShadow"></div><div style="background: black; left: 2px; top: 6px; width: 858px; height: 484px; position: absolute; z-index: 1; opacity: 0.0125;" class="dropShadow"></div><div style="background: black; left: 2px; top: 2px; width: 858px; height: 484px; position: absolute; z-index: 1; opacity: 0.0125;" class="dropShadow"></div><div style="background: black; left: 2px; top: 0px; width: 858px; height: 484px; position: absolute; z-index: 1; opacity: 0.0125;" class="dropShadow"></div><div style="background: black; left: 4px; top: 2px; width: 858px; height: 484px; position: absolute; z-index: 1; opacity: 0.0125;" class="dropShadow"></div><div style="background: black; left: 2px; top: 4px; width: 858px; height: 484px; position: absolute; z-index: 1; opacity: 0.0125;" class="dropShadow"></div><div style="background: black; left: 0px; top: 2px; width: 858px; height: 484px; position: absolute; z-index: 1; opacity: 0.0125;" class="dropShadow"></div><div style="background: black; left: 3px; top: 1px; width: 858px; height: 484px; position: absolute; z-index: 1; opacity: 0.0125;" class="dropShadow"></div><div style="background: black; left: 3px; top: 3px; width: 858px; height: 484px; position: absolute; z-index: 1; opacity: 0.0125;" class="dropShadow"></div><div style="background: black; left: 1px; top: 3px; width: 858px; height: 484px; position: absolute; z-index: 1; opacity: 0.0125;" class="dropShadow"></div><div style="background: black; left: 1px; top: 1px; width: 858px; height: 484px; position: absolute; z-index: 1; opacity: 0.0125;" class="dropShadow"></div></div>
+	<script type="text/javascript" src="/camweb/pages/www1/login/jquery-1.3.2.js"></script>
+	<script type="text/javascript" src="/camweb/pages/www1/login/jquery.cookie.js"></script>
+	<script type="text/javascript" src="/camweb/pages/www1/login/jquery.dropshadow.js"></script>
+    
+
+
+
+<script>
+	function testProviderValidation(frm) {
+		if(typeof provedor_validarForm == 'function') {
+			return provedor_validarForm(frm);
+		} else {
+			return true;
+		}	
+	}
+	
+	function testCaptcha(frm) {
+		var resp = frm.j_captcha_response;
+		if (resp) {
+			var v = resp.value;
+			v = v.replace( /\s*$/, "" );
+			if (v == "") {
+				alert("Por favor, digite o codigo equivalente a imagem mostrada.");
+				resp.focus();
+				return false;
+			} 
+		}
+		return true;	 
+	}
+
+	function form_onsubmit(frm) {
+    $(frm).children('input[type=submit]').attr('disabled',true);
+	
+		if (!testCaptcha(frm)) {
+      $(frm).children('input[type=submit]').attr('disabled',false);
+			return false;
+		}
+		
+		if (!testProviderValidation(frm)) {
+      $(frm).children('input[type=submit]').attr('disabled',false);
+			return false;
+		}
+		
+    /*
+    document.forms['loginCertForm'].elements['submit'].disabled = true;
+    */
+
+		return true;
+	}
+	
+	/*
+	 * Funcoes de validacao do provider
+	 */
+	/* VERSÃO DO PROVEDOR: 0.6.8-SNAPSHOT*//* AMBIENTE DO PROVEDOR: NAO_PRO*/function provedor_validarForm(frm) {      var cpfok;	  if(frm.id=="loginCertForm") { return true; }	  mt = document.loginForm.user.value;      if (mt.length < 11) {	    alert("CPF inválido.");	    document.loginForm.user.focus();	    return false;	  }	  else if (testaDigito(mt)) {	   alert("CPF inválido.");	   document.loginForm.user.focus();	   return false;      }	  cpfok = validatecpf(document.loginForm.user.value);	  if (cpfok == false) {	   alert("O CPF digitado não está correto. Verifique o CPF e tente digitá-lo novamente.");	   document.loginForm.user.focus();	   return false;      }	  mt = document.loginForm.pass.value;	  if (mt.length == "") {	    alert("Senha não pode ser nula.");	    document.loginForm.pass.focus();	    return false;	  }	  return true;    }    function testaDigito(campo) {              var ind;      for (ind = 0; ind < campo.length; ind++) {        if(isNumber(campo.charAt(ind))) {}        else {            return(1);        }      }      return(0);    }    function isNumber(i)   {      if (parseInt(i) > 0 || i == "0")      {        return(1);      }      return(0);    }    function validatecpf(numero) {      var cpf,controle,teste,c;      var soma,digito,contini,contfim,ii,i,code;      cpf = "";      controle = "";      cpf = numero;      pf = 0;      contini = 2;      contfim = 10;      teste = cpf.substring(((cpf.length-1)-1),11);      for (ii = 1; ii <= 2; ii++) {        soma = 0;        pf = pf + 1;        for (i = contini; i <= contfim; i++) {          soma = soma + eval(cpf.substring((i-ii)-1,i-pf))*(contfim+1+ii-i);        }        if (ii == 2) {          soma = soma + (2*digito);        }        digito = ((soma*10) % 11);        if (digito == 10) {          digito =0;        }        controle = controle + digito;        contini = 3;        contfim = 11;      }      if (controle == teste) {        return true;      }      else {        return false;      }    }      function contaCaracter()    {      var conta = document.loginForm.user.value;      if (conta.length == 11) {	    document.loginForm.pass.focus();	    return true;	  }    }    function mostrarMudarSenha() {       document.getElementById("div_test").style.display='block';       document.getElementById("div_test").style.visibility='visible';       document.getElementById("p1").style.display='none';       document.getElementById("p1").style.visibility='hidden';	   document.getElementById("p2").style.display='block';       document.getElementById("p2").style.visibility='visible';    }    function ocultarMudarSenha() {       document.getElementById("div_test").style.display='none';       document.getElementById("div_test").style.visibility='hidden';       document.getElementById("p2").style.display='none';       document.getElementById("p2").style.visibility='hidden';       document.getElementById("p1").style.display='block';       document.getElementById("p1").style.visibility='visible';    }
+
+</script>
+
+	<script type="text/javascript">
+	    $(function() {
+        	jQuery('#conteudo').dropShadow({opacity: .2});
+	        var codOrgao = $.cookie('cw_orgao') || '02400';
+	        $('body').addClass('orgao'+codOrgao);
+		$('#imgLogo').toggle();
+	    });
+	</script>
+  
+
+
+</body></html>

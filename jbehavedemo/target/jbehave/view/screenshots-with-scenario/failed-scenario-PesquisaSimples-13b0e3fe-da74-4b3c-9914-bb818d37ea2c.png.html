@@ -1,0 +1,118 @@
+<html><head>
+        <link rel="stylesheet" type="text/css" href="ErrorPageTemplate.css">
+
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+        <title>O Internet Explorer não pode exibir a página da Web</title>
+
+        <script language="javascript" type="text/javascript" src="errorPageStrings.js">
+        </script>
+        <script language="javascript" type="text/javascript" src="httpErrorPagesScripts.js">
+        </script>
+    
+
+    </head><body onload="javascript:initMoreInfo('infoBlockID');">
+
+        <table border="0" cellSpacing="0" cellPadding="0" width="730">
+
+        <!-- Error title -->
+            <tbody><tr>
+                <td id="infoIconAlign" vAlign="top" rowSpan="2" width="60" align="left">
+                    <img id="infoIcon" alt="Ícone de informações" src="noConnect.png" width="48" height="48">
+                </td>
+                <td id="mainTitleAlign" vAlign="middle" width="*" align="left">
+                    <h1 id="mainTitle">O Internet Explorer não pode exibir a página da Web</h1>
+                </td>
+            </tr>
+
+            <tr>
+                <!-- This row is for HTTP status code, as well as the divider-->
+                <td id="errorCodeAlign" class="errorCodeAndDivider" align="right">&nbsp;
+                    <div class="divider"></div>
+                </td>
+            </tr>
+
+        <!-- What you can do -->
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td id="whatToTryAlign" vAlign="top" align="left">
+                    <h2 id="whatToTry">Você pode tentar:</h2>
+                </td>
+            </tr>
+
+        <!-- Check Connection -->
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td id="checkConnectionAlign" vAlign="middle" align="left">
+                    <h4>
+                        <table>
+                            <tbody><tr>
+                                <td vAlign="top">
+                                </td>
+                                <td vAlign="middle">
+                                    <button id="diagnose" onclick="javascript:diagnoseConnectionAndRefresh(); return false;">Diagnosticar Problemas de Conexão</button>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </h4>
+                </td>
+            </tr>
+
+
+        <!-- InfoBlock -->
+            <tr>
+                <td id="infoBlockAlign" vAlign="top" align="right">
+                    &nbsp;
+                </td>
+                <td id="moreInformationAlign" vAlign="middle" align="left">
+                    <h4>
+                      <table>
+                          <tbody><tr>
+                              <td vAlign="top">
+                                  <a onclick="javascript:expandCollapse('infoBlockID', true); return false;" href="#"><img id="infoBlockIDImage" class="actionIcon" border="0" alt="Mais informações" src="down.png"></a>
+                              </td>
+                              <td vAlign="top">
+                                  <span id="moreInfoContainer"><a href="javascript:expandCollapse('infoBlockID', true);">Mais informações</a></span>
+                                  <noscript>&lt;ID id="moreInformation"&gt;Mais informações&lt;/ID&gt;</noscript>
+                              </td>
+                          </tr>
+                      </tbody></table>
+                    </h4>
+                    <div style="display: none;" id="infoBlockID" class="infoBlock">
+                        <p>
+                            <id id="errorExpl1">Esse problema pode ser causado por vários motivos, incluindo:</id>
+                            <ul>
+                                <li id="errorExpl2">A conectividade com a Internet foi perdida.</li>
+                                <li id="errorExpl3">Site temporariamente indisponível.</li>
+                                <li id="errorExpl4">O Servidor de Nomes de Domínio (DNS) não está acessível.</li>
+                                <li id="errorExpl5">O Servidor de Nomes de Domínio (DNS) não tem uma listagem para o domínio do site.</li>
+                                <li id="errorExpl7">Talvez haja um erro de digitação no endereço.</li> 
+                                <li id="errorExpl6">Se for um endereço HTTPS (seguro), clique em Ferramentas, clique em Opções da Internet, clique em Avançadas e verifique se os protocolos SSL e TLS estão habilitados na seção de segurança.</li>
+                            </ul>
+                        <p></p>
+                        <p id="offlineUsers"><b>Para usuários offline</b></p>                                     
+                        <p id="viewSubscribedFeeds1">
+                            Ainda é possível ver feeds assinados e algumas páginas exibidas recentemente.<br>
+                            Para exibir feeds assinados:
+                            <ol>
+                                <li id="viewSubscribedFeeds2">Clique no botão Favoritos <img border="0" src="favcenter.png">, clique em <b>Feeds</b> e clique no feed que deseja exibir.</li>
+                            </ol>
+                        <p></p>
+                        <p id="viewRecentWebpages1">Exibir as páginas da Web visitadas recentemente (talvez não funcione em todas as páginas):
+                            <ol>
+                                <li id="viewRecentWebpages2">Pressione Alt, clique em <b>Arquivo</b> e clique em <b>Trabalhar Offline</b>.</li>
+                                <li id="viewRecentWebpages3">Clique no botão Favoritos <img border="0" src="favcenter.png">, clique em <b>Histórico</b> e clique na página que deseja exibir.</li>
+                            </ol>
+                        <p></p>
+                    </div>
+                </td>
+            </tr>
+
+        </tbody></table>
+
+    
+
+</body></html>

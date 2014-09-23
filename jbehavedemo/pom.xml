@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.serpro.tutor.demoiselle</groupId>
+	<artifactId>jbehavedemo</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>jbehavedemo</name>
+
+	<parent>
+		<groupId>br.gov.frameworkdemoiselle.component.behave</groupId>
+		<artifactId>demoiselle-behave-parent</artifactId>
+		<version>1.4.0-BETA1</version>
+	</parent>	
+
+	<dependencies>
+		<dependency>
+			<groupId>br.gov.frameworkdemoiselle.component.behave</groupId>
+			<artifactId>demoiselle-behave-parser-jbehave</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>
+				br.gov.frameworkdemoiselle.component.behave
+			</groupId>
+			<artifactId>demoiselle-behave-runner-webdriver</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>demoiselle.sourceforge.net-release</id>
+			<url>http://demoiselle.sourceforge.net/repository/release</url>
+		</repository>
+		<repository>
+			<id>demoiselle.sourceforge.net-snapshot</id>
+			<url>http://demoiselle.sourceforge.net/repository/snapshot</url>
+		</repository>
+	</repositories>
+	
+	<description>Tutorial JBehave-demoiselle</description>
+</project>
