@@ -8,7 +8,7 @@ import br.gov.frameworkdemoiselle.behave.runner.ui.Link;
 import br.gov.frameworkdemoiselle.behave.runner.ui.Select;
 import br.gov.frameworkdemoiselle.behave.runner.ui.TextField;
 
-@ScreenMap(name="Eprocesso", base="https://eprocesso.suiterfb.desenv.serpro",location="/ControleAutenticarUsuario.asp")
+@ScreenMap(name="Eprocesso", location="https://eprocesso.suiterfb.desenv.serpro")
 public class AcessoEProcesso {
 	@ElementMap(name = "Usuário", locatorType = ElementLocatorType.Name, locator = "user" )
 	private TextField txtUsuario;

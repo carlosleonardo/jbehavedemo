@@ -9,7 +9,10 @@ public class JBehaveDemoSuite {
 	
 	public JBehaveDemoSuite() {
 		contexto = BehaveContext.getInstance();
+		
+		contexto.addStoriesReuse("/reusestories/acesso.story");
 		contexto.addSteps(new EProcessoLogin());
+		
 	}
 	
 	@Test
