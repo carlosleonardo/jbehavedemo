@@ -1,4 +1,5 @@
 Cenário: Acesso a "{sistema}"
 
-Dado que estou na tela "{sistema}"
-Então será exibido "WebDriver"
+Dado que vou para a tela "{sistema}"
+Quando estou na tela "{sistema}"
+
