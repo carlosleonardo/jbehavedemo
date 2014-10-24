@@ -27,7 +27,7 @@ public class JBehaveDemoSuite {
 	@Test
 	public void acessarEProcesso()
 	{
-		contexto.run("/stories/eprocesso.story");
+		contexto.run("/stories");
 	}
 	
 }
