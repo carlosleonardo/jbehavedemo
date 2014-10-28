@@ -13,12 +13,3 @@ E clico em "Certificado Digital"
 E confirmo caixa de diálogo
 Então vou para a tela "Principal"
 
-Cenário: Sair sistema
-Dado que estou na tela "Principal"
-Quando clico em "Sair"
-E vou para a tela "Confirmar Saída"
-Então clico em "Não, Sair do Sistema"
-
-
-
-
